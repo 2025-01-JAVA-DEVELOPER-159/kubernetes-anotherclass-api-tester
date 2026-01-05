@@ -46,7 +46,7 @@ public class DefaultController {
     @GetMapping(value = {"/hello","/"})
     public String hello(){
          String version = "[App Version] : " + applicationVersion ;
-        return "Welcome to Kubernetes Another Class  "+ version +"\n";
+        return "Hello Kubernetes Another Class  "+ version +"\n";
     }
     @GetMapping(value ="**")
     public String noPath(){
