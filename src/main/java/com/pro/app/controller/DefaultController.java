@@ -157,7 +157,7 @@ public class DefaultController {
 
     @GetMapping("/version")
     public ResponseEntity<Object> version(){
-        String returnString = "[App Version] : " + applicationVersion ;
+        String returnString = "[App Version] : " + applicationVersion+"\n" ;
         return ResponseEntity.ok(returnString);
     }
     @GetMapping("/info")
