@@ -20,25 +20,21 @@ public class Startup implements
     @Override public void onApplicationEvent(ContextRefreshedEvent event) {
         try {
             log.info("[System] App is initializing");
-            //Thread.sleep(1000);
+            Thread.sleep(100);
             log.info("[System] Database is connecting");
-            //Thread.sleep(1000);
+            Thread.sleep(100);
             log.info("[System] Database is connected");
-            //Thread.sleep(1000);
+            Thread.sleep(100);
             log.info("[System] App is starting");
-            //Thread.sleep(1000);
+            Thread.sleep(1000);
             log.info("[System] App is started");
-            Thread.sleep(1000);
+            Thread.sleep(100);
             defaultService.isAppLive = true;
-            Thread.sleep(1000);
+            Thread.sleep(100);
             log.info("[System] ConfigMap data is loading..");
-            //Thread.sleep(1000);
-            log.info("[System] ConfigMap data is loading..");
-            //Thread.sleep(1000);
-            log.info("[System] ConfigMap data is loading..");
-            //Thread.sleep(1000);
+            Thread.sleep(100);
             log.info("[System] Data loading is completed");
-            Thread.sleep(1000);
+            Thread.sleep(100);
             defaultService.isAppReady = true;
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
