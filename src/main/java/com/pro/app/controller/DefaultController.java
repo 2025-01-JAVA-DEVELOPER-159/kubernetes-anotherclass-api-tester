@@ -46,7 +46,11 @@ public class DefaultController {
     @GetMapping(value = {"/hello","/"})
     public String hello(){
          String version = "[App Version] : " + applicationVersion ;
-        return "Hello Kubernetes Another Class  "+ version +"\n";
+        //return "Welcome Kubernetes Another Class  "+ version +"\n";
+         return "안녕 Kubernetes Another Class  "+ version +"\n";
+        // return "Bye Kubernetes Another Class  "+ version +"\n";
+        // return "Hello Kubernetes Another Class  "+ version +"\n";
+        // return "Good Job Kubernetes Another Class  "+ version +"\n";
     }
     @GetMapping(value ="**")
     public String noPath(){
@@ -141,7 +145,7 @@ public class DefaultController {
 
     @GetMapping("/hostname")
     public String hostname(){
-        return defaultService.hostname();
+        return defaultService.hostname()+"\n";
     }
 
     @GetMapping("/memory-leak")
