@@ -11,8 +11,8 @@ server:
 application:
   role: "ALL"
   # version: "Api Tester v1.0.0"
-  version: "Api Tester v2.0.0"
-  # version: "Api Tester v3.0.0"
+  #version: "Api Tester v2.0.0"
+  version: "Api Tester v3.0.0"
   # version: "Api Tester v4.0.0"
   # version: "Api Tester v5.0.0"
 
